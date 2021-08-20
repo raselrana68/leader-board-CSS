@@ -90,7 +90,7 @@ hr{
 .course-text{
     margin-top: 1px;
 }
-.couses{
+.courses{
     display: grid;  
     grid-template-columns: repeat(3, 1fr);
 }
@@ -128,4 +128,32 @@ hr{
     background-color: rgb(255, 193, 23);
     border-radius: 5px;
     width: 70px;
+}
+
+/* Responsive */
+
+/* for mobile  */
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .blogs ,.players, .courses{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        
+    }
+}
+
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
